@@ -47,6 +47,7 @@ header ul li a:hover {
 .show {
   display: flex;
   opacity: 1;
+  z-index: 10;
   transition: opacity 1s ease-out;
   height: auto;
   flex-direction: column;
@@ -246,6 +247,7 @@ header ul li a:hover {
   }
   /* HAMBURGER ICON */
   .nav-ham {
+    z-index: 20;
     width: 35px;
     height: 30px;
     margin: 10px 10px;

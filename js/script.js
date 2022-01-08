@@ -6,6 +6,16 @@ const menu = document.querySelector('.menu-mobile')
     menu.classList.toggle("show");
     menu.classList.toggle("hide");
 });
+
+const mobLinks = document.querySelectorAll('.menu-mobile li')
+mobLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    menu.classList.toggle("show");
+    icon.classList.toggle("open");
+    menu.classList.toggle("hide");
+});
+});
+console.log(mobLinks)
 // GET ARRAY for every Rect,IMG,COntent
 const rectArr = document.querySelectorAll('.rect-cl')
 const imgArr = document.querySelectorAll('.imgC')
