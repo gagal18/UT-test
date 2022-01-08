@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>TNT</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <header>
+        <a href="#" class="logo"><img src="./assets/TNT.png" alt="" /></a>
+        <ul class="menu-desktop">
+          <li><a href="#" class="underlined-text">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="menu-mobile hide">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon nav-ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+    </section>
+    <section class="main">
+      <div class="bar-hor"></div>
+      <div class="bar-ver"></div>
+      <div class="hero">
+        <div class="content">
+          <div class="part">
+            <h3>HELLO WORLD!</h3>
+            <h1>
+              We are creative agency.<br />
+              We build digital work that<br />
+              you will love!
+            </h1>
+            <button>
+              Explore our portfolio <img src="./assets/Arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="part-cards">
+            <div class="card red-border">
+              <img class="top-icon" src="./assets/Web-design-icon.svg" alt="" />
+              <div class="card-heading">Web Design</div>
+              <div class="card-text">
+                Sed ut perspiciatis unde omni iste natus error sit volunteer
+                accusantum doloremque.
+              </div>
+              <div class="arrow-icon">
+                <img
+                  src="./assets/Arrow-right-red.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card blue-border">
+              <img class="top-icon" src="./assets/Planning-icon.svg" alt="" />
+              <div class="card-heading">Digital Artwork</div>
+              <div class="card-text">
+                Sed ut perspiciatis unde omni iste natus error sit volunte.
+              </div>
+              <div class="arrow-icon">
+                <img
+                  src="./assets/Arrow-right-blue.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card green-border">
+              <img class="top-icon" src="./assets/Web-icon.svg" alt="" />
+              <div class="card-heading">Website</div>
+              <div class="card-text">
+                Sed ut perspiciatis unde omni iste natus error sit volunteer
+                accusantum doloremque. Ut perspiciatis unde omni iste natus
+                error sit volunteer accusantum doloremque.
+              </div>
+              <div class="arrow-icon">
+                <img
+                  src="./assets/Arrow-right-green.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="image-container">
+            <img
+              src="./assets/img1.png"
+              id="content1"
+              class="active-img imgC"
+            />
+            <img src="./assets/img4.jpg" id="content2" class="imgC" />
+            <img src="./assets/img5.jpg" id="content3" class="imgC" />
+          </div>
+          <div class="img-content active-con" id="text-1">
+            <h3>Artwork project</h3>
+            <h2>Enjoy the space</h2>
+          </div>
+          <div class="img-content" id="text-2">
+            <h3>Great envoirment</h3>
+            <h2>Develop new skills</h2>
+          </div>
+          <div class="img-content" id="text-3">
+            <h3>Design project</h3>
+            <h2>Enjoy the process</h2>
+          </div>
+          <div class="rect">
+            <div
+              class="rect-cl active-rect"
+              id="r1"
+              onClick="changeRect(1)"
+            ></div>
+            <div class="rect-cl" id="r2" onClick="changeRect(2)"></div>
+            <div class="rect-cl" id="r3" onClick="changeRect(3)"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
