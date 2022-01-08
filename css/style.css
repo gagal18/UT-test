@@ -305,14 +305,29 @@ header ul li a:hover {
 }
 /* MOBILE MEDIA QUERY */ 
 @media only screen and (max-width: 600px){
+  .bar-hor{
+    display: none;
+  }
   .hero .content{
-    padding-top: 50px;
+    padding-top: 75px;
   }
   .part-cards{
     flex-direction: column;
     align-items: center;
   }
   .card{
-    width: 75%;
+    width: 100%;
+  }
+  .content .part{
+    width: 90%;
+  }
+  .content .part button{
+    width: 100%;
+  }
+  .img-content{
+    bottom: 2%;
+  }
+  .rect div{
+    width: 20%;
   }
 }
