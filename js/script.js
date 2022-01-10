@@ -15,7 +15,6 @@ mobLinks.forEach(link => {
     menu.classList.toggle("hide");
 });
 });
-console.log(mobLinks)
 // GET ARRAY for every Rect,IMG,COntent
 const rectArr = document.querySelectorAll('.rect-cl')
 const imgArr = document.querySelectorAll('.imgC')
@@ -25,14 +24,17 @@ const imgContArr = document.querySelectorAll('.img-content')
 // Change SLIDE every 4 seconds
 let counter = 1
 
-setInterval(function(){
+// Function for setInterval
+const sliderCounter = () => {
   if(counter == 3){
     counter = 1
   }else{
     counter++
   }
   changeRect(counter)
-}, 4000);
+}
+
+var timer = setInterval(sliderCounter, 4000);
 
 
 // Function for changing img 
@@ -56,5 +58,7 @@ const changeRect = ( id ) => {
       con.classList.add('active-con')
     }
   });
+  clearInterval(timer)
+  timer = setInterval(sliderCounter, 4000)
 }
 
